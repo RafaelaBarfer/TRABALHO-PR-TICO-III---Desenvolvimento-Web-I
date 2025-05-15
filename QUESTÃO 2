@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Grid</title>
+  
+  <style>
+    
+      
+  
+    .container1 {
+      background: green;
+      height: 80px;
+    }
+    
+    .container2 {
+      background:blue;
+        height: 350px;
+      display: grid;
+      justify-items: stretch;
+      align-items: stretch;
+       grid-template-columns: repeat(6, 1fr);
+      gap: 20px;
+      padding: 10px;
+      
+    }
+    
+    .containerA {
+      background: pink;
+       grid-column: span 2;
+      border-radius: 10px;
+    }
+    
+    .containerB {
+      background: pink;
+       grid-column: span 2;
+      border-radius: 10px;
+    }
+    
+     .containerC {
+      background: pink;
+       grid-column: span 2;
+       border-radius: 10px;
+    }
+    
+    .containerD {
+      background: purple;
+      border-radius: 10px;
+    }
+   
+     .containerE {
+      background: purple;
+       border-radius: 10px;
+    }
+    
+     .containerF {
+      background: purple;
+       border-radius: 10px;
+    }
+    
+     .containerG {
+      background: purple;
+       border-radius: 10px;
+    }
+    
+     .containerH {
+      background: purple;
+       border-radius: 10px;
+    }
+    
+     .containerI {
+      background: purple;
+       border-radius: 10px;
+    }
+    
+    .container3 {
+      background: orange;
+      height: 80px;
+    }
+    
+    </style>
+  </head>
+    <body>  
+      
+    <div class="container1"></div>
+      
+   <div class="container2">   
+  <div class="containerA"></div>
+  <div class="containerB"></div>
+  <div class="containerC"></div>
+  <div class="containerD"></div>
+  <div class="containerE"></div>
+  <div class="containerF"></div>
+  <div class="containerG"></div>
+  <div class="containerH"></div>
+  <div class="containerI"></div>
+  </div> 
+      
+      <div class="container3"></div>
+      </body>
+  </html>
