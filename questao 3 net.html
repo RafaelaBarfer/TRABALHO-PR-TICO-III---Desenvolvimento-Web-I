@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRES ESTILOS</title>
+
+    <style>
+
+        .container1 {
+            background: #2271B3;
+            height: 80px;
+            color: white;
+            display: grid;
+            grid-template-columns: 1fr repeat(3, auto);
+            align-items: center;
+            font-size: 25px;
+            padding: 10px;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .container2 {
+            background: #F2F2F2;
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            align-items: center;
+            font-size: 20px;
+            padding: 20px;
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .container2 img {
+             max-width: 100%;
+             height: auto;
+        }
+
+
+        .container3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            background: #ADD8E6;
+            padding: 20px;
+        }
+
+        .container4 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 20px;
+            justify-items: center;
+            font-size: 18px;
+            background: #F2F2F2;
+            gap: 15px;
+        }
+
+         .container4 > div {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+
+        .container5 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: #2271B3;
+            color: white;
+            font-size: 18px;
+        }
+
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            .container1 {
+                grid-template-columns: 1fr repeat(3, auto);
+                font-size: 20px;
+                height: auto;
+                justify-content: space-around;
+            }
+
+            .container2 {
+                grid-template-columns: 1fr;
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .container2 img {
+                max-width: 80%;
+                margin-bottom: 10px;
+            }
+
+
+            .container3 {
+                font-size: 22px;
+            }
+
+            .container4 {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+             .container4 > div {
+                padding: 15px;
+            }
+
+            .container5 {
+                 font-size: 16px;
+            }
+        }
+
+        @media only screen and (max-device-width: 767px) {
+            .container1 {
+                grid-template-columns: 1fr;
+                height: auto;
+                text-align: center;
+                font-size: 18px;
+                gap: 5px;
+            }
+
+            .container1 > div {
+                 padding: 5px 0;
+            }
+
+            .container2 {
+                grid-template-columns: 1fr;
+                font-size: 16px;
+                text-align: center;
+                padding: 10px;
+            }
+
+             .container2 img {
+                max-width: 90%;
+                margin-bottom: 10px;
+            }
+
+
+            .container3 {
+                font-size: 20px;
+                padding: 15px;
+            }
+
+            .container4 {
+                grid-template-columns: 1fr;
+                gap: 10px;
+                padding: 15px;
+            }
+
+             .container4 > div {
+                padding: 10px;
+            }
+
+            .container5 {
+                font-size: 14px;
+                text-align: center;
+                padding: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container1">
+        <div class="containerA">Meu Portfólio</div>
+        <div class="containerB">Início</div>
+        <div class="containerC">Sobre</div>
+        <div class="containerD">Projetos</div>
+    </div>
+
+    <div class="container2">
+        <div class="containerE">
+            <img src="https://i.pinimg.com/736x/6b/42/ba/6b42bab6fbec8daf6db8f705471e4838.jpg" alt="Descrição da imagem">
+        </div>
+        <div class="containerF">Olá eu sou uma desenvolvedora! Sem bem vindo ao meu portfolio, alguns dos meus projetos desenvolvidos em linguagens como JAVA, C# e C++ estarão disponíveis abaixo, fique a vontade para olha-los.</div>
+    </div>
+
+    <div class="container3">Meus Projetos</div>
+
+    <div class="container4">
+        <div class="containerG">Projeto 1</div>
+        <div class="containerH">Projeto 2</div>
+        <div class="containerI">Projeto 3</div>
+        <div class="containerI">Projeto 4</div>
+        <div class="containerI">Projeto 5</div>
+        <div class="containerI">Projeto 6</div>
+    </div>
+
+    <div class="container5"> ©2025 . MeuPortfólio. Todos os direitos reservados.</div>
+
+</body>
+</html>
